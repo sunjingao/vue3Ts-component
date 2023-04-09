@@ -1,0 +1,10 @@
+@import '../../../../css/config/index';
+@import '../../../../css/preInherit/index';
+
+.#{$pre}-carousel-item {
+  @include pre-inherit;
+
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,19 @@
+@import '../../../../css/preInherit/index';
+
+.v-tree {
+  @include pre-inherit;
+
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  user-select: none;
+
+  .v-tree-no-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

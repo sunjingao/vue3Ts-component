@@ -1,0 +1,6 @@
+@import '../../../../css/config/index';
+@import '../../../../css/preInherit/index';
+
+.#{$pre}-tabs {
+  @include pre-inherit;
+}

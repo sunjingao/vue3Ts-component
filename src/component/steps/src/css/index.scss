@@ -1,0 +1,7 @@
+@import '../../../../css/config/index';
+@import '../../../../css/preInherit/index';
+
+.#{$pre}-steps {
+  display: flex;
+  align-items: center;
+}

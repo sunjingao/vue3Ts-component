@@ -1,0 +1,29 @@
+@import '../../../../css/config/index';
+@import '../../../../css/preInherit/index';
+
+.#{$pre}-option {
+  @include pre-inherit;
+
+  position: relative;
+  padding: 0 15px;
+  overflow: hidden;
+  line-height: 2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #fff;
+  cursor: pointer;
+
+  &.active {
+    font-weight: 700;
+    color: #409eff;
+  }
+
+  &.disabled {
+    color: #c0c4cc;
+    cursor: not-allowed;
+  }
+
+  &:not(.disabled):hover {
+    background-color: #f5f7fa;
+  }
+}

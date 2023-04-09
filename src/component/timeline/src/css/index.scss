@@ -1,0 +1,8 @@
+@import '../../../../css/config/index';
+@import '../../../../css/preInherit/index';
+
+.#{$pre}-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

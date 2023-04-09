@@ -1,0 +1,10 @@
+@import '../config/index';
+
+*[class^='#{$pre}-'],
+*[class^='#{$pre}-']::before,
+*[class^='#{$pre}-']::after,
+[class^='#{$pre}-'] *,
+[class^='#{$pre}-'] *::before,
+[class^='#{$pre}-'] *::after, {
+  //transition: 0.2s;
+}

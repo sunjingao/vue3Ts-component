@@ -1,0 +1,49 @@
+@import '../../../../css/config/index';
+@import '../../../../css/preInherit/index';
+
+.#{$pre}-collapse-item {
+  @include pre-inherit;
+
+  border-top: 1px solid #ebeef5;
+  border-bottom: 1px solid #ebeef5;
+  font-size: 13px;
+  color: #303133;
+
+  .title {
+    position: relative;
+    display: flex;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+
+    &.disabled {
+      color: #c0c4cc;
+      cursor: not-allowed;
+    }
+
+    .title-content {
+      flex: 1;
+    }
+
+    .arrow {
+      display: inline-block;
+      width: 26px;
+      text-align: center;
+      transform-origin: center center;
+      pointer-events: none;
+
+      &.up {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  .content {
+    overflow: hidden;
+
+    .words {
+      padding-bottom: 20px;
+      line-height: 2;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../../../css/config/index';
+@import '../../../../css/preInherit/index';
+
+.#{$pre}-mt10 {
+  margin-top: 10px;
+}
+
+.#{$pre}-message {
+  @include pre-inherit;
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  transform: translateX(-50%);
+}
+
+.#{$pre}-message-item {
+  margin-top: 10px;
+  opacity: 0%;
+
+  &.#{$pre}-opa-show {
+    opacity: 100% !important;
+  }
+}

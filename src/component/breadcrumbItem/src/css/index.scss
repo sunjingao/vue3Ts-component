@@ -1,0 +1,46 @@
+@import '../../../../css/config/index';
+@import '../../../../css/preInherit/index';
+
+.#{$pre}-breadcrumb-item {
+  @include pre-inherit;
+
+  position: relative;
+  display: inline-flex;
+  padding: 5px 0;
+  line-height: 1.5;
+  white-space: nowrap;
+  color: #303133;
+
+  &.show-href {
+    font-weight: 700;
+
+    &:hover {
+      color: #409eff;
+      cursor: pointer;
+    }
+  }
+
+  a {
+    font-weight: 700;
+    color: #303133;
+
+    &:hover {
+      color: #409eff;
+      cursor: pointer;
+    }
+  }
+
+  .separator {
+    margin: 0 6px;
+    font-weight: normal;
+
+    &.separator {
+      color: #303133;
+      cursor: default;
+    }
+  }
+
+  &:last-child .separator {
+    display: none;
+  }
+}

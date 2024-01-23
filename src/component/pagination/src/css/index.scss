@@ -1,0 +1,11 @@
+@import '../../../../css/config/index';
+@import '../../../../css/preInherit/index';
+
+.#{$pre}-pagination {
+  @include pre-inherit;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
